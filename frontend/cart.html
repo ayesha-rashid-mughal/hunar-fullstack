@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart — Hunar Marketplace</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">Hunar</a>
+    <nav class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="cart.html">Cart <span class="cart-badge" id="cartCount">0</span></a>
+    </nav>
+    <div class="nav__right" id="navAccountArea"></div>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="nav__mobile" id="navMobile">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="cart-layout">
+    <div>
+      <h1 style="margin-bottom: 1.5rem;">Your cart</h1>
+      <div class="cart-list" id="cartList">
+        <p class="empty-note">Loading cart…</p>
+      </div>
+    </div>
+    <div class="cart-summary">
+      <h3 style="margin-bottom: 1rem;">Order summary</h3>
+      <div class="cart-summary__row"><span>Items</span><span id="summaryCount">0</span></div>
+      <div class="cart-summary__total"><span>Total</span><span id="summaryTotal">Rs. 0</span></div>
+
+      <div class="field">
+        <label for="shippingAddress">Shipping address *</label>
+        <textarea id="shippingAddress" rows="3" placeholder="House, street, city…"></textarea>
+      </div>
+      <button class="btn btn--marigold btn--full" id="checkoutBtn">Place order</button>
+      <p class="form-status" id="checkoutStatus" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">Hunar<p>A full-stack marketplace for handmade craft.</p></div>
+    <div class="footer__cols">
+      <div><h6>Shop</h6><a href="shop.html">All products</a><a href="wishlist.html">Wishlist</a><a href="cart.html">Cart</a></div>
+      <div><h6>Account</h6><a href="auth.html">Log in</a><a href="account.html">My orders</a></div>
+    </div>
+  </div>
+  <p class="footer__copy">&copy; 2026 Hunar Marketplace — built as an academic project.</p>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

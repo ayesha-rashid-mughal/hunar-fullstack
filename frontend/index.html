@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hunar Marketplace — Handmade, delivered</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">Hunar</a>
+    <nav class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="cart.html">Cart <span class="cart-badge" id="cartCount">0</span></a>
+    </nav>
+    <div class="nav__right" id="navAccountArea"></div>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="nav__mobile" id="navMobile">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero__bg">
+    <img src="https://picsum.photos/seed/hunar-hero/1600/1000" alt="">
+    <div class="hero__scrim"></div>
+  </div>
+  <div class="hero__content">
+    <p class="eyebrow reveal" data-delay="0">Made by hand, sold with a real backend behind it</p>
+    <h1 class="hero__headline reveal" data-delay="1">Every piece has<br> a <span class="hero__underline">name</span> behind it.</h1>
+    <p class="hero__sub reveal" data-delay="2">
+      Browse handmade shawls, pottery, jewellery, and more — every order,
+      account, and cart here is real, backed by a proper database.
+    </p>
+    <div class="hero__ctas reveal" data-delay="3">
+      <a href="shop.html" class="btn btn--marigold">Shop the collection</a>
+      <a href="auth.html" class="btn btn--ghost">Create an account</a>
+    </div>
+  </div>
+</section>
+
+<div class="stitch-divider"><span></span></div>
+
+<section class="impact-strip">
+  <div class="impact-grid">
+    <div class="impact-item"><span class="impact-value" id="statProducts">—</span><span class="impact-label">Handmade products</span></div>
+    <div class="impact-item"><span class="impact-value" id="statCategories">—</span><span class="impact-label">Craft categories</span></div>
+    <div class="impact-item"><span class="impact-value" id="statCustomers">—</span><span class="impact-label">Registered buyers</span></div>
+  </div>
+</section>
+
+<div class="stitch-divider"><span></span></div>
+
+<section class="section" id="categories">
+  <div class="section__head">
+    <p class="eyebrow">Browse by craft</p>
+    <h2 class="section__title">Shop by category</h2>
+  </div>
+  <div class="cat-grid" id="catGrid"></div>
+</section>
+
+<section class="section">
+  <div class="section__head">
+    <p class="eyebrow">Fresh from the workshop</p>
+    <h2 class="section__title">Featured pieces</h2>
+  </div>
+  <div class="product-grid" id="featuredGrid">
+    <p class="empty-note">Loading products…</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">Hunar<p>A full-stack marketplace for handmade craft — Node.js, Express, and MySQL under the hood.</p></div>
+    <div class="footer__cols">
+      <div><h6>Shop</h6><a href="shop.html">All products</a><a href="wishlist.html">Wishlist</a><a href="cart.html">Cart</a></div>
+      <div><h6>Account</h6><a href="auth.html">Log in</a><a href="account.html">My orders</a></div>
+    </div>
+  </div>
+  <p class="footer__copy">&copy; 2026 Hunar Marketplace — built as an academic project.</p>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
