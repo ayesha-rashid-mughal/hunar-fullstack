@@ -4,7 +4,7 @@
 // login) is stored in localStorage and attached to every
 // authenticated request automatically.
 // -------------------------------------------------------
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = '/api';
 
 function getToken() { return localStorage.getItem('hunar_token'); }
 function getUser() {
